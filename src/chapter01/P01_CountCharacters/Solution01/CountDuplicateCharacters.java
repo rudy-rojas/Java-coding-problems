@@ -1,4 +1,4 @@
-package chapter01.P01_CountCharacters.Solucion01;
+package chapter01.P01_CountCharacters.Solution01;
 
 import java.util.ArrayList;
 
