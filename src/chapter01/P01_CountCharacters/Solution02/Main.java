@@ -29,9 +29,6 @@ public class Main {
         showExecutionTime(System.nanoTime() - startTime);
         System.out.println(method03);
 
-
-        
-
     }
 
     public static void showExecutionTime(long time) {
