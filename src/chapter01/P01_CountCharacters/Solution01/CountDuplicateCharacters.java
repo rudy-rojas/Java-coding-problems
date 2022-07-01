@@ -1,5 +1,10 @@
 package chapter01.P01_CountCharacters.Solution01;
 
+/**
+ * Counts the number of repeated characters in a string.
+ * @author Rudy Rojas
+ */
+
 import java.util.ArrayList;
 
 public class CountDuplicateCharacters {
@@ -10,6 +15,12 @@ public class CountDuplicateCharacters {
         showMatrixFormat(duplicates);
     }
 
+    /**
+     * Return a static matrix with the number of characters repeated.
+     * 
+     * @param text This is a text string.
+     * @return A structure data of two dimension of type String.
+     */
     public static String[][] getDuplicateCharacters(String text) {
         ArrayList<String> index = getSizeMatrix(text);
         String[][] answer = new String[2][index.size()];
@@ -66,7 +77,7 @@ public class CountDuplicateCharacters {
     private static void showMatrix(String[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                System.out.print(matrix[i][j] + " ");                
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
@@ -74,7 +85,7 @@ public class CountDuplicateCharacters {
     }
 
     private static void showMatrixFormat(String[][] matrix) {
-        for(int j = 0; j < matrix[0].length; j++) {
+        for (int j = 0; j < matrix[0].length; j++) {
             System.out.println(matrix[0][j] + " = " + matrix[1][j]);
         }
         System.out.println();
