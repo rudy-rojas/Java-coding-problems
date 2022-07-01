@@ -8,6 +8,10 @@ package chapter01.P01_CountCharacters.Solution01;
 import java.util.ArrayList;
 
 public class CountDuplicateCharacters {
+    
+    private CountDuplicateCharacters() {
+        throw new AssertionError("Cannot be instantiaded");
+    }
     public static void main(String[] args) {
         String text = "This is a test text";
         String[][] duplicates = getDuplicateCharacters(text);
@@ -74,7 +78,7 @@ public class CountDuplicateCharacters {
         return isThere;
     }
 
-    private static void showMatrix(String[][] matrix) {
+    public static void showMatrix(String[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 System.out.print(matrix[i][j] + " ");
@@ -84,9 +88,9 @@ public class CountDuplicateCharacters {
         System.out.println();
     }
 
-    private static void showMatrixFormat(String[][] matrix) {
+    public static void showMatrixFormat(String[][] matrix) {
         for (int j = 0; j < matrix[0].length; j++) {
-            System.out.println(matrix[0][j] + " = " + matrix[1][j]);
+            System.out.print(matrix[0][j] + " = " + matrix[1][j] + ", ");
         }
         System.out.println();
     }
