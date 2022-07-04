@@ -12,7 +12,6 @@ public class Main {
 
     public static void main(String[] args) {
         String reverse = Strings.resersing(Main.TEXT);
-        
         System.out.println(reverse);
     }
 }
